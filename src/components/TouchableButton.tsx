@@ -88,6 +88,24 @@ export const TouchableButton = (
         <Text style={{marginTop: 10}}>{textButton}</Text>
       </TouchableOpacity>
     );
+  } else if (textButton === 'Test Vocacional') {
+    return (
+      <TouchableOpacity
+        onPress={() =>
+          navigator.dispatch(
+            CommonActions.navigate({
+              name: 'VocationalTestScreen',
+            }),
+          )
+        }
+        style={styles.box}
+        activeOpacity={0.6}>
+        <Text>
+          <Icon name={iconName} size={80} color={globalColors.primary} />
+        </Text>
+        <Text style={{marginTop: 10}}>{textButton}</Text>
+      </TouchableOpacity>
+    );
   } else if (textButton === 'Plataformas Aprendizaje') {
     return (
       <TouchableOpacity
@@ -134,12 +152,30 @@ export const TouchableButton = (
         <Text style={{marginTop: 10}}>{textButton}</Text>
       </TouchableOpacity>
     );
-  } else if (textButton === 'Tutoriales Upds') {
+  } else if (textButton === 'Biblioteca Upds') {
     return (
       <TouchableOpacity
         onPress={() => {
           Linking.openURL('Bliblioteca UPDS');
         }}
+        style={styles.box}
+        activeOpacity={0.6}>
+        <Text>
+          <Icon name={iconName} size={80} color={globalColors.primary} />
+        </Text>
+        <Text style={{marginTop: 10}}>{textButton}</Text>
+      </TouchableOpacity>
+    );
+  } else if (textButton === 'Proyecciones') {
+    return (
+      <TouchableOpacity
+        onPress={() =>
+          navigator.dispatch(
+            CommonActions.navigate({
+              name: 'ProjectionsScreen',
+            }),
+          )
+        }
         style={styles.box}
         activeOpacity={0.6}>
         <Text>

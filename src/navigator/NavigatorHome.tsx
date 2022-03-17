@@ -4,6 +4,7 @@ import {HomeScreen} from '../screens/HomeScreen';
 import {NoticeScreen} from '../screens/NoticeScreen';
 import {SocialMediaScreen} from '../screens/SocialMediaScreen';
 import {AnswerUpdsScreen} from '../screens/AnswerUpdsScreen';
+import {VocationalTestScreen} from '../screens/VocationalTestScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,10 @@ export const StackNavigator = () => {
       <Stack.Screen name="NoticeScreen" component={NoticeScreen} />
       <Stack.Screen name="SocialMediaScreen" component={SocialMediaScreen} />
       <Stack.Screen name="AnswerUpdsScreen" component={AnswerUpdsScreen} />
+      <Stack.Screen
+        name="VocationalTestScreen"
+        component={VocationalTestScreen}
+      />
     </Stack.Navigator>
   );
 };

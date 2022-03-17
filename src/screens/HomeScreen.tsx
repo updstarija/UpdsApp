@@ -38,7 +38,14 @@ export const HomeScreen = () => {
           <TouchableButton iconName="location-on" textButton="Ubicacion" />
           <TouchableButton iconName="forum" textButton="Comunicados" />
           <TouchableButton iconName="groups" textButton="Redes Sociales" />
-          <TouchableButton iconName='device-unknown' textButton='Upds Responde'/>
+          <TouchableButton
+            iconName="device-unknown"
+            textButton="Upds Responde"
+          />
+          <TouchableButton
+            iconName="engineering"
+            textButton="Test Vocacional"
+          />
         </View>
       </View>
     </SafeAreaView>
