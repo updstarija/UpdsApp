@@ -8,11 +8,13 @@ import {
   View,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import {Header} from '../components/Header';
 import {globalColors, globalStyle} from '../theme/appTheme';
 
 export const AnswerUpdsScreen = () => {
   return (
     <SafeAreaView style={globalStyle.safeAreaStyle}>
+      <Header textHeader="UPDS RESPONDE" />
       <View style={styles.container}>
         <View style={styles.boxStyle}>
           <Text>Horario de atencion</Text>
@@ -71,7 +73,7 @@ const styles = StyleSheet.create({
   },
   boxStyle: {
     width: deviceWidth - 50,
-    height: 50,
+    height: 70,
     backgroundColor: 'white',
     borderLeftColor: globalColors.third,
     borderLeftWidth: 5,
