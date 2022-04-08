@@ -1,5 +1,12 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, StyleSheet, Text, View} from 'react-native';
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import {NoticeCard} from '../components/NoticeCard';
 import {globalColors} from '../theme/appTheme';
 
@@ -10,21 +17,23 @@ export const NoticeScreen = () => {
         backgroundColor: 'white',
         paddingTop: StatusBar.currentHeight,
       }}>
-      <View
-        style={{
-          alignItems: 'center',
-          marginBottom: 10,
-        }}>
-        <Text style={styles.titleNotice}>COMUNICADOS</Text>
-      </View>
-      <View style={styles.containerNotice}>
-        <NoticeCard />
-        <NoticeCard />
-        <NoticeCard />
-        <NoticeCard />
-        <NoticeCard />
-        <NoticeCard />
-      </View>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View
+          style={{
+            alignItems: 'center',
+            marginBottom: 10,
+          }}>
+          <Text style={styles.titleNotice}>COMUNICADOS</Text>
+        </View>
+        <View style={styles.containerNotice}>
+          <NoticeCard />
+          <NoticeCard />
+          <NoticeCard />
+          <NoticeCard />
+          <NoticeCard />
+          <NoticeCard />
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {globalColors} from '../theme/appTheme';
+// import VideoPlayer from 'react-native-video-player';
 
 const facebookList = [
   {
@@ -206,6 +207,16 @@ export const SocialMediaScreen = () => {
               style={{width: 30, height: 30}}
             />
             <Text style={{fontWeight: 'bold'}}>Youtube</Text>
+          </View>
+          <View style={styles.cardContainer}>
+            {/* <VideoPlayer
+              video={{uri: 'https://www.youtube.com/watch?v=VhOj-LRa8_g'}}
+              autoplay={false}
+              defaultMuted={true}
+              videoWidth={1500}
+              videoHeight={1500}
+              thumbnail={require('../../assets/updsfacebook.jpeg')}
+            /> */}
           </View>
         </View>
       </View>
